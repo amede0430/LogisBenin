@@ -1,4 +1,4 @@
-import { Home, Profile } from "@/pages";
+import { Home, Profile, SignIn } from "@/pages";
 
 export const routes = [
   {
@@ -10,6 +10,11 @@ export const routes = [
     name: "profile",
     path: "/profile",
     element: <Profile />,
+  },
+  {
+    name: "connexion",
+    path: "/sign-in",
+    element: <SignIn />,
   },
 ];
 

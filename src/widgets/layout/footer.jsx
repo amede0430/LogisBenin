@@ -79,64 +79,64 @@ export function Footer({ title, description, socials, menus, copyright }) {
 }
 
 Footer.defaultProps = {
-  title: "Material Tailwind",
+  title: "LogisBenin",
   description:
-    "Easy to use React components for Tailwind CSS and Material Design.",
+    "Simplifiez la recherche, la location et la gestion de vos biens immobiliers avec LogisBenin",
   socials: [
-    {
-      color: "gray",
-      name: "twitter",
-      path: "#",
-    },
-    {
-      color: "gray",
-      name: "youtube",
-      path: "#",
-    },
-    {
-      color: "gray",
-      name: "instagram",
-      path: "#",
-    },
-    {
-      color: "black",
-      name: "github",
-      path: "#",
-    },
+    // {
+    //   color: "blue",
+    //   name: "facebook",
+    //   path: "#",
+    // },
+    // {
+    //   color: "gray",
+    //   name: "twitter",
+    //   path: "#",
+    // },
+    // {
+    //   color: "red",
+    //   name: "youtube",
+    //   path: "#",
+    // },
+    // {
+    //   color: "purple",
+    //   name: "instagram",
+    //   path: "#",
+    // },
   ],
   menus: [
     {
-      name: "useful links",
+      name: "Liens utiles",
       items: [
-        { name: "About Us", path: "#" },
+        { name: "À propos", path: "#" },
         { name: "Blog", path: "#" },
         {
-          name: "Github",
+          name: "Contact",
           path: "#",
         },
         {
-          name: "Free Products",
+          name: "Services",
           path: "#",
         },
       ],
     },
     {
-      name: "other resources",
+      name: "Ressources supplémentaires",
       items: [
         {
-          name: "MIT License",
+          name: "Conditions d'utilisation",
           path: "#",
         },
         {
-          name: "Contribute",
+          name: "Politique de confidentialité",
           path: "#",
         },
         {
-          name: "Change Log",
+          name: "Partenaires",
           path: "#",
         },
         {
-          name: "Contact Us",
+          name: "FAQ",
           path: "#",
         },
       ],
@@ -144,7 +144,7 @@ Footer.defaultProps = {
   ],
   copyright: (
     <>
-      Copyright © {year} LogisBenin by{" "}
+      Copyright © {new Date().getFullYear()} LogisBenin by{" "}
       <a
         href="#"
         target="_blank"
@@ -156,6 +156,7 @@ Footer.defaultProps = {
     </>
   ),
 };
+
 
 Footer.propTypes = {
   title: PropTypes.string,
