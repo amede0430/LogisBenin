@@ -138,7 +138,7 @@ export function Home() {
       </section> */}
       <section className="relative bg-white py-24 px-4">
         <div className="container mx-auto">
-          <PageTitle section="Co-Working" heading="Build something">
+          {/* <PageTitle section="Co-Working" heading="Build something">
             Put the potentially record low maximum sea ice extent tihs year down
             to low ice. According to the National Oceanic and Atmospheric
             Administration, Ted, Scambos.
@@ -164,7 +164,7 @@ export function Home() {
                 </Typography>
               </Card>
             ))}
-          </div>
+          </div> */}
           <PageTitle section="Contact Us" heading="Want to work with us?">
             Complete this form and we will get back to you in 24 hours.
           </PageTitle>
