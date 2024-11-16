@@ -165,13 +165,13 @@ export function Home() {
               </Card>
             ))}
           </div> */}
-          <PageTitle section="Contact Us" heading="Want to work with us?">
-            Complete this form and we will get back to you in 24 hours.
+          <PageTitle section="Contactez-nous">
+            Completez le formulaire pour doner votre avis ou poser vos questions
           </PageTitle>
           <form className="mx-auto w-full mt-12 lg:w-5/12">
             <div className="mb-8 flex gap-8">
-              <Input variant="outlined" size="lg" label="Full Name" />
-              <Input variant="outlined" size="lg" label="Email Address" />
+              <Input variant="outlined" size="lg" label="Votre Nom" />
+              <Input variant="outlined" size="lg" label="Votre e-mail" />
             </div>
             <Textarea variant="outlined" size="lg" label="Message" rows={8} />
             <Checkbox
@@ -181,19 +181,19 @@ export function Home() {
                   color="gray"
                   className="flex items-center font-normal"
                 >
-                  I agree the
+                  J'accepte
                   <a
                     href="#"
                     className="font-medium transition-colors hover:text-gray-900"
                   >
-                    &nbsp;Terms and Conditions
+                    &nbsp;les termes et conditions générals
                   </a>
                 </Typography>
               }
               containerProps={{ className: "-ml-2.5" }}
             />
             <Button variant="gradient" size="lg" className="mt-8" fullWidth>
-              Send Message
+              Envoi du Message
             </Button>
           </form>
         </div>
