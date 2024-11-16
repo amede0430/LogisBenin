@@ -99,7 +99,7 @@ export function Navbar({ brandName, routes, action }) {
 }
 
 Navbar.defaultProps = {
-  brandName: "LogisBenin",
+  brandName: <img src="./public/img/logo.jpg" alt="LogisBenin" width={70} />,
   action: (
     <a
       href="#"

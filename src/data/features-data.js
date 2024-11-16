@@ -1,28 +1,37 @@
+import { BuildingLibraryIcon } from "@heroicons/react/24/outline";
 import {
-  ChatBubbleBottomCenterTextIcon,
+  HomeIcon,
+  HomeModernIcon,
 } from "@heroicons/react/24/solid";
 
 export const featuresData = [
   {
     color: "gray",
-    title: "Awarded Agency",
-    icon: ChatBubbleBottomCenterTextIcon,
+    title: "Parcelles",
+    icon: HomeModernIcon,
     description:
-      "Divide details about your product or agency work into parts. A paragraph describing a feature will be enough.",
+      "Découvrez nos parcelles disponibles pour la construction de votre maison ou pour un investissement. Profitez d'un emplacement idéal.",
   },
   {
-    color: "gray",
-    title: "Free Revisions",
-    icon: ChatBubbleBottomCenterTextIcon,
+    color: "cyan",
+    title: "Villas",
+    icon: BuildingLibraryIcon,
     description:
-      "Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious.",
+      "Explorez notre sélection de villas de luxe, parfaites pour les familles ou les vacances. Un cadre de vie exceptionnel vous attend.",
   },
   {
-    color: "gray",
-    title: "Verified Company",
-    icon: ChatBubbleBottomCenterTextIcon,
+    color: "light-green",
+    title: "Chambres à louer",
+    icon: HomeIcon,
     description:
-      "Write a few lines about each one. A paragraph describing a feature will be enough. Keep you user engaged!",
+      "Trouvez la chambre idéale à louer, que ce soit pour une courte ou longue durée. Confort et commodité garantis.",
+  },
+  {
+    color: "blue",
+    title: "Appartements",
+    icon: HomeModernIcon,
+    description:
+      "Découvrez nos appartements modernes et bien situés, adaptés à tous les budgets. Un espace de vie agréable vous attend.",
   },
 ];
 

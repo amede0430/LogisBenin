@@ -29,12 +29,11 @@ export function Home() {
                 color="white"
                 className="mb-6 font-black"
               >
-                Your story starts with us.
+                Votre projet immobilier commence ici.
               </Typography>
               <Typography variant="lead" color="white" className="opacity-80">
-                This is a simple example of a Landing Page you can build using
-                Material Tailwind. It features multiple components based on the
-                Tailwind CSS and Material Design by Google.
+                Découvrez notre plateforme dédiée à l'achat, la vente et la location de biens immobiliers. 
+                Profitez d'une expérience simple et efficace pour réaliser vos transactions immobilières.
               </Typography>
             </div>
           </div>
@@ -65,42 +64,43 @@ export function Home() {
                 className="mb-3 font-bold"
                 color="blue-gray"
               >
-                Working with us is a pleasure
+                Textes et lois sur l'immobilier au Bénin
               </Typography>
               <Typography className="mb-8 font-normal text-blue-gray-500">
-                Don't let your uses guess by attaching tooltips and popoves to
-                any element. Just make sure you enable them first via
-                JavaScript.
+                La loi N°2022-29 du 20 décembre 2022.
                 <br />
                 <br />
-                The kit comes with three pre-built pages to help you get started
-                faster. You can change the text and images and you're good to
-                go. Just make sure you enable them first via JavaScript.
+                La présente loi a pour objectif de régir le crédit-bail en République du Bénin,
+                notamment les droits, obligations et responsabilités des parties intervenant
+                dans une opération de crédit-bail.
               </Typography>
-              <Button variant="filled">read more</Button>
+              <Button variant="filled">
+                <a href="loi-2022-29.pdf" download={true}>Voir Plus</a>
+              </Button>
+              {/* <Button variant="filled">Voir Plus</Button> */}
             </div>
             <div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0">
               <Card className="shadow-lg border shadow-gray-500/10 rounded-lg">
                 <CardHeader floated={false} className="relative h-56">
                   <img
-                    alt="Card Image"
-                    src="/img/teamwork.png"
+                    alt="Logo Image"
+                    src="/img/logo.jpg"
                     className="h-full w-full"
                   />
                 </CardHeader>
                 <CardBody>
-                  <Typography variant="small" color="blue-gray" className="font-normal">Enterprise</Typography>
                   <Typography
                     variant="h5"
                     color="blue-gray"
                     className="mb-3 mt-2 font-bold"
                   >
-                    Top Notch Services
+                    Logis Bénin
                   </Typography>
                   <Typography className="font-normal text-blue-gray-500">
-                    The Arctic Ocean freezes every winter and much of the
-                    sea-ice then thaws every summer, and that process will
-                    continue whatever happens.
+                    LogisBenin est une plateforme innovante conçue pour faciliter l'accès à l'immobilier.
+                    Que vous souhaitiez acheter, vendre ou louer un bien, Logis vous offre une expérience fluide et sécurisée.
+                    Grâce à notre interface conviviale et à nos outils performants, vous pouvez naviguer facilement à travers les différentes options disponibles,
+                    tout en bénéficiant de conseils d'experts. Avec LogisBénin, transformez vos projets immobiliers en réalité en toute confiance et simplicité.
                   </Typography>
                 </CardBody>
               </Card>
