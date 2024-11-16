@@ -1,5 +1,7 @@
-import { BuildingLibraryIcon } from "@heroicons/react/24/outline";
+import { BuildingLibraryIcon, BuildingOffice2Icon } from "@heroicons/react/24/outline";
 import {
+  BuildingStorefrontIcon,
+  ComputerDesktopIcon,
   HomeIcon,
   HomeModernIcon,
 } from "@heroicons/react/24/solid";
@@ -27,9 +29,23 @@ export const featuresData = [
       "Trouvez la chambre idéale à louer, que ce soit pour une courte ou longue durée. Confort et commodité garantis.",
   },
   {
+    color: "green",
+    title: "Bureaux",
+    icon: BuildingStorefrontIcon,
+    description:
+      "Découvrez notre sélection de bureaux modernes, parfaits pour les entreprises et les professionnels. Un environnement de travail inspirant vous attend.",
+  },
+  {
+    color: "pink",
+    title: "Résidences de vacances",
+    icon: HomeModernIcon,
+    description:
+      "Profitez de nos résidences de vacances, où chaque séjour est une expérience inoubliable. Confort et détente garantis dans un cadre idyllique.",
+  },
+  {
     color: "blue",
     title: "Appartements",
-    icon: HomeModernIcon,
+    icon: BuildingOffice2Icon,
     description:
       "Découvrez nos appartements modernes et bien situés, adaptés à tous les budgets. Un espace de vie agréable vous attend.",
   },
