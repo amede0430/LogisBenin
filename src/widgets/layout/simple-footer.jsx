@@ -43,9 +43,9 @@ SimpleFooter.defaultProps = {
   brandName: "LogisBenin",
   brandLink: "#",
   routes: [
-    { name: "Creative Tim", path: "https://www.creative-tim.com" },
-    { name: "About Us", path: "https://www.creative-tim.com/presentation" },
-    { name: "Blog", path: "https://www.creative-tim.com/blog" },
+    // { name: "Creative Tim", path: "https://www.creative-tim.com" },
+    // { name: "About Us", path: "https://www.creative-tim.com/presentation" },
+    // { name: "Blog", path: "https://www.creative-tim.com/blog" },
   ],
 };
 
