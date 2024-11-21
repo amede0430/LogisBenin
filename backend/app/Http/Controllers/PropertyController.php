@@ -14,9 +14,20 @@ class PropertyController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-        return response()->json( Property::with(["owner","images"])->get());
+         // Récupérer le paramètre category_id de la requête
+         $type = $request->query('type');
+         $Properties = collect();
+         // Si 'all' ou aucune catégorie n'est spécifiée, tous les posts sont retournés
+         if ($type && $type !== 'all') {
+             // Filtrer les posts selon la catégorie sélectionnée
+             $Properties = Property::where('type', $type)->with(["owner","images"])->get();
+         } else {
+             // Afficher tous les posts si 'all' ou aucune catégorie n'est sélectionnée
+             $Properties = Property::with(["owner","images"])->get();
+         }
+        return response()->json($Properties);
     }
 
     /**
