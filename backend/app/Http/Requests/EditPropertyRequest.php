@@ -24,7 +24,7 @@ class EditPropertyRequest extends FormRequest
         return [
             "title" => "required|string",
             "description" => "required|string",
-            "type" => "in:maison,appartement,terrain",
+            "type" => "required|in:maison,appartement,terrain",
             "price" => "required|numeric",
             "location" => "required|string",
             "surface_area" => "required|numeric",

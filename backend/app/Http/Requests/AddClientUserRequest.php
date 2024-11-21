@@ -29,8 +29,3 @@ class AddClientUserRequest extends FormRequest
         ];
     }
 }
-$table->string('name')->nullable(); // Nom de l'utilisateur
-        $table->string('email')->unique()->nullable(); // Email unique
-        $table->string('password')->nullable(); // Mot de passe
-        $table->enum('role', ['client', 'agent', 'admin'])->nullable(); // Rôle
-        $table->string('phone_number')->nullable(); // Téléphone

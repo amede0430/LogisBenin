@@ -6,6 +6,7 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use App\Http\Requests\LoginRequest;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 use App\Http\Requests\AddAgentUserRequest;
 use App\Http\Requests\AddClientUserRequest;
 
@@ -31,7 +32,7 @@ class AuthController extends Controller
         User::create([
             "name" => $request->name,
             "email" => $request->email,
-            "password" => $request->password,
+            "password" => Hash::make($request->password),
             "phone_number" => $request->phone_number,
             "role" => "client"
         ]);

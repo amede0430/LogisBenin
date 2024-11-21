@@ -23,6 +23,6 @@ class Property extends Model
         return $this->hasMany(PropertyImage::class);
     }
     public function owner(){
-        return $this->BelongsTo(User::class);
+        return $this->BelongsTo(User::class,"user_id");
     }
 }

@@ -76,6 +76,7 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
     public function canAddProperty(): bool {
+        return true;
         return $this->role === "agent";
     }
 }

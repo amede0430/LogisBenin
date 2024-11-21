@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Property;
 use Illuminate\Http\Request;
 use App\Models\PropertyImage;
+use Illuminate\Support\Facades\Storage;
 use App\Http\Requests\AddPropertyRequest;
 use App\Http\Requests\EditPropertyRequest;
 
@@ -25,13 +26,13 @@ class PropertyController extends Controller
     {
         $property = Property::create([
             "title" => $request->title,
-            "description" => $request->title,
-            "type" => $request->title,
-            "price" => $request->title,
-            "location" => $request->title,
-            "surface_area" => $request->title,
-            "rooms" => $request->title,
-            "status" => $request->title,
+            "description" => $request->description,
+            "type" => $request->type,
+            "price" => $request->price,
+            "location" => $request->location,
+            "surface_area" => $request->surface_area,
+            "rooms" => $request->rooms,
+            "status" => $request->status,
             "user_id" => auth()->user()->id
         ]);
         foreach($request->file("images") as $image){
@@ -81,6 +82,9 @@ class PropertyController extends Controller
             return response()->json([
                 "message" => "You are not allowed to delete the property"
             ],403);
+        }
+        foreach($property->images as $image){
+            Storage::disk("public")->delete($image->image_url);
         }
         $property->delete();
         return response()->json();
